@@ -55,11 +55,27 @@
                     <div class="col-md-9">
                         <div class="name-wrapper">
                             <h1 class="name">Christodoulos Stylianou</h1>
-                            <span>Title/Position</span>
+                            <span>Research Engineer (CyI) | PhD Student (EPCC)</span>
                         </div>
                         <p>
-                            TODO: Symmary.
-
+                            Christodoulos (Chris) Stylianou joined the <A HREF="https://castorc.cyi.ac.cy/"
+                                target="_blank">Computation-based Science and Technology Research
+                                Center (CaSToRC)</A> at <A HREF="https://www.cyi.ac.cy/" target="_blank">The Cyprus
+                                Institute (CyI)</A> as a Research Engineer for the <A
+                                HREF="https://www.eurocc-access.eu/" target="_blank">EuroCC2</A> Project. He holds an
+                            undergraduate degree in Electrical & Electronic Engineering (MEng) from <A
+                                HREF="https://www.imperial.ac.uk/" target="_blank">Imperial College London</A>, a
+                            Masters Degree in High Performance Computing (HPC) with Data Science (MSc) from <A
+                                HREF="https://www.epcc.ed.ac.uk/" target="_blank">EPCC</A> at <A
+                                HREF="https://www.ed.ac.uk/" target="_blank">The University
+                                of Edinburgh</A> and he is currently in the final stages of his PhD in HPC,
+                            Computational & Data Science and Software Engineering at EPCC.
+                        </p>
+                        <p>
+                            Chris specializes in the area of High Performance Computing and more specifically
+                            in Heterogeneous and Distributed Computing, Performance Portability, and the application of
+                            Artificial Intelligence in accelerating Sparse Linear Algebra for the next generation
+                            hardware architectures.
                         </p>
 
                         <ul class="social-icon">
@@ -90,7 +106,17 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="expertise-item">
-                                    TODO: Research Focus
+                                    My research focus is on developing and optimizing sparse linear algebra for
+                                    efficient high-performance computing. In particular, I am interested in the
+                                    optimization of Sparse Matrix Vector Multiplication (SpMV) on heterogeneous and
+                                    distributed architectures through automatic format selection using AI. The selection
+                                    aims to better match the underlying data structure to the computation by better
+                                    exploiting the hardware characteristics and available resources, offering new
+                                    optimization opportunities.
+                                    I also work on performance portability for Multi- and Manycore
+                                    (GPU) computing with frameworks like <A
+                                        HREF="https://kokkos.github.io/kokkos-core-wiki/" target="_blank">Kokkos</A> and
+                                    <A HREF="https://www.khronos.org/sycl/" target="_blank">SYCL</A>.
                                 </div>
                             </div>
                         </div>
@@ -118,7 +144,26 @@
                                     </h3>
 
                                     <p>
-                                        <A HREF="https://morpheus-org.github.io" target="_blank">Morpheus</A> TODO
+                                        <A HREF="https://morpheus-org.github.io" target="_blank">Morpheus</A>, is a
+                                        library of sparse matrix storage formats that is designed for efficient and
+                                        transparent format switching across architectures without introducing
+                                        prohibitive overheads at runtime and that, at the same time, enables the
+                                        straightforward addition of new storage formats without major application code
+                                        changes.
+                                    </p>
+                                    <p>
+                                        The library has a functional design which separates the containers that
+                                        implement the storage formats from the algorithm that implement operations such
+                                        as multiplication. Each container is aware of the memory space it resides in,
+                                        and the algorithms require knowledge of the execution space that they will be
+                                        running in. This design allows Morpheus to target multiple heterogeneous
+                                        architectures.
+                                    </p>
+                                    <p>
+                                        Morpheus is a C++ header-only library written in C++17 and makes
+                                        heavy use of template and meta-programming techniques. Currently supports 6
+                                        sparse matrix storage formats (COO, CSR, DIA, ELL, HYB and HDC) and 5 backends
+                                        (Serial, OpenMP, CUDA, HIP and Kokkos).
                                     </p>
                                 </div>
                             </div>
@@ -150,11 +195,25 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="content-item">
+                                    <h3><A HREF="slides/iwapt2023_presentation.pdf">
+                                            Optimizing Sparse Linear Algebra Through Automatic Format Selection and
+                                            Machine Learning
+                                        </A></h3>
+                                    <h4>The Eighteenth International Workshop on Automatic Performance Tuning (iWAPT)
+                                    </h4>
+                                    <p>St. Petersburgh, Florida, USA, 2023</p>
+                                    <h3><A HREF="slides/cug23_presentation.pdf">
+                                            Morpheus Unleashed: Fast Cross-Platform SpMV on Emerging Architectures
+                                        </A></h3>
+                                    <h4>Cray User Group 2023
+                                    </h4>
+                                    <p>Helsinki, Finland, 2023</p>
                                     <h3><A HREF="slides/sc22_presentation_epcc.pdf">
                                             Exploiting dynamic sparse matrices for performance portable linear algebra
-                                            operations.
+                                            operations
                                         </A></h3>
                                     <h4>2022 International Workshop on Performance, Portability & Productivity in HPC
+                                        (P3HPC)
                                     </h4>
                                     <p>Dallas, Texas, USA, 2022</p>
                                 </div>
@@ -186,17 +245,17 @@
                             <div class="col-md-4">
                                 <address>
                                     <strong>Address</strong><br>
-                                    Lab Name<br>
-                                    Name of Institute<br>
-                                    Address Name<br>
-                                    City<br>
-                                    Country, PostCode
+                                    CaSToRC<br>
+                                    The Cyprus Institute (CyI)<br>
+                                    20 Konstantinou Kavafi Street, 2121 Aglantzia<br>
+                                    Nicosia<br>
+                                    Cyprus, P. O. Box 27456, CY-1645
                                 </address>
                             </div>
                             <div class="col-md-4">
                                 <address>
                                     <strong>Phone Number</strong><br>
-                                    Add phone number
+                                    +357 22 208 700
                                 </address>
                             </div>
                             <div class="col-md-4">
