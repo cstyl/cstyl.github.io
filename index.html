@@ -54,8 +54,8 @@
                     </div>
                     <div class="col-md-9">
                         <div class="name-wrapper">
-                            <h1 class="name">Christodoulos Stylianou</h1>
-                            <span>Research Engineer (CyI) | PhD Student (EPCC)</span>
+                            <h1 class="name">Christodoulos Stylianou, PhD</h1>
+                            <span>Research Engineer (CyI)</span>
                         </div>
                         <p align="justify">
                             Christodoulos (Chris) Stylianou joined the <A HREF="https://castorc.cyi.ac.cy/"
@@ -65,18 +65,21 @@
                                 HREF="https://www.eurocc-access.eu/" target="_blank">EuroCC2</A> Project. He holds an
                             undergraduate degree in Electrical & Electronic Engineering (MEng) from <A
                                 HREF="https://www.imperial.ac.uk/" target="_blank">Imperial College London</A>, a
-                            Masters Degree in High Performance Computing (HPC) with Data Science (MSc) from <A
+                            Masters Degree in High Performance Computing (HPC) with Data Science (MSc) and a PhD in HPC,
+                            Computational & Data Science and Software Engineering from <A
                                 HREF="https://www.epcc.ed.ac.uk/" target="_blank">EPCC</A> at <A
                                 HREF="https://www.ed.ac.uk/" target="_blank">The University
-                                of Edinburgh</A> and he is currently in the final stages of his PhD in HPC,
-                            Computational & Data Science and Software Engineering at EPCC.
+                                of Edinburgh</A>.
                         </p>
 
                         <p align="justify">
                             Chris specializes in the area of High Performance Computing and more specifically
                             in Heterogeneous and Distributed Computing, Performance Portability, and the application of
                             Artificial Intelligence in accelerating Sparse Linear Algebra for the next generation
-                            hardware architectures.
+                            hardware architectures. His current research interests are around acceleration of training
+                            time via sparsification of Neural Networks. Chris is also skilled in software development,
+                            training, and fostering collaboration between academia, industry, and government with a
+                            growing interest in product management.
                         </p>
 
                         <ul class="social-icon">
@@ -168,16 +171,81 @@
                                     </p>
                                 </div>
                             </div>
+
                             <div class="col-md-6">
                                 <!-- TODO: Figure out how to properly resize this thing -->
                                 <A HREF="https://morpheus-org.github.io" target="_blank"><img
                                         src="img/morpheus-logo.png" class="img-responsive" alt="" /></A>
                             </div>
                         </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="expertise-item">
+                                    <h3>
+                                        Lyncs.IO
+                                    </h3>
+
+                                    <p align="justify">
+                                        <A HREF="https://lyncs-api.github.io" target="_blank">Lyncs</A>, is
+                                        a Python API for Lattice QCD, currently under development. Lyncs aims to bring
+                                        several popular libraries for Lattice QCD under a common framework. Lyncs
+                                        interfaces with libraries for GPUs and CPUs in a way that can accommodate
+                                        additional computing architectures as these arise, achieving the best
+                                        performance for the calculations while maintaining the same high-level workflow.
+                                    </p>
+                                    <p align="justify">
+
+                                        <code>lyncs_io</code> aims to provide an all-inclusive framework for IO in
+                                        Python. It responds to the necessity of missing tools for parallel IO and
+                                        user-friendliness in various file formats. Therefore it implements a very simple
+                                        interface with two main functionalities, <code>load</code> and
+                                        <code>save</code>; it supports various file formats and, where possible,
+                                        parallel IO for domain decomposed arrays. Additionally, it also implements file
+                                        formats that are common in Lattice QCD as, for instance, the
+                                        Lattice QCD Interchange Message Encapsulation (LIME).
+                                    </p>
+                                    <p align="justify">
+                                        The objectives of the package are:
+                                    <ul align="justify">
+                                        <li><b>Seamlessly IO:</b> we have tried to simplify the IO as much as possible,
+                                            without having to open files, directly specify the format or using more than
+                                            one line of code. Three main functions are provided
+                                            <code>save(obj, filename)</code> for saving,
+                                            <code></code>obj=load(filename)</code> for loading and
+                                            <code></code>obj=head(filename)</code> for retrieving metadata without
+                                            loading data.
+                                        </li>
+                                        <li><b>Many formats supported</b> (e.g., <code>numpy</code>, <code>hdf5</code>,
+                                            <code>tar</code>, <code>lime</code>). The file format can be either deduced
+                                            from the filename’s extension or with the option format passed as an
+                                            argument to the above functions. The structure of the package is flexible
+                                            enough to easily accommodate new/customized file formats as these arise. For
+                                            instance we support file formats typical in lattice QCD like LIME.
+                                        </li>
+                                        <li><b>Omission of extension:</b> When saving, if the extension is omitted, the
+                                            optimal file format is deduced from the data type and the extension is added
+                                            to the filename. When loading, any extension is considered, i.e. filename.*,
+                                            and if only one match is available, the file is loaded.</li>
+                                        <li><b>Support for archives:</b> In case of archives, e.g. HDF5, zip etc., the
+                                            content can be accessed directly by specifying it in the path.</li>
+                                        <li><b>Support for Parallel IO:</b> Where possible and implemented, parallel IO
+                                            is supported. This is enabled either via MPI providing a Cartesian
+                                            communicator with the option comm, or via Dask with the option chunks.</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <!-- TODO: Figure out how to properly resize this thing -->
+                                <A HREF="https://lyncs-api.github.io" target="_blank"><img src="img/lyncs-logo.png"
+                                        class="img-responsive" alt="" /></A>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- .row -->
-
 
             </div>
         </section>
@@ -226,6 +294,44 @@
 
                 </div>
                 <!--.row-->
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="section-title">
+                            <h2>Teaching</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="content-item">
+                                    <h3>Programming Languages</h3>
+                                    <h4>2nd Year Undergraduate Course </h4>
+                                    <p>European University Cyprus (EUC), <b><i>SS24</i></b>, <b><i>SS25</i></b></p>
+
+                                    <h3>Parallel Computing</h3>
+                                    <h4>4th Year Undergraduate Course </h4>
+                                    <p>European University Cyprus (EUC), <b><i>AW24</i></b></p>
+
+                                    <h3>Computer Architecture & Organization</h3>
+                                    <h4>2nd Year Undergraduate Course </h4>
+                                    <p>European University Cyprus (EUC), <b><i>AW24 (E-learning)</i></b></p>
+
+                                    <h3>Advanced Computer Architecture & Organization</h3>
+                                    <h4>3rd Year Undergraduate Course </h4>
+                                    <p>European University Cyprus (EUC), <b><i>AW24</i></b></p>
+
+                                    <h3>Compiler Design</h3>
+                                    <h4>4th Year Undergraduate Course </h4>
+                                    <p>European University Cyprus (EUC), <b><i>SS25</i></b></p>
+                                </div>
+                                <!-- .experience-item -->
+                            </div>
+                        </div>
+                        <!--.row-->
+                    </div>
+
+                </div>
             </div>
             <!-- .container -->
         </section>
